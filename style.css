@@ -1,0 +1,114 @@
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 20px;
+  border: 10px solid #f1f1f1;
+  border-bottom-color: #d1d1d1;
+  border-right-color: #d1d1d1;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Main Container */
+.container {
+  max-width: 600px;
+  margin: -20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Answer Section Styles */
+.answers {
+  width: 95%;
+  min-height: 200px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.text {
+  font-size: 20px;
+  font-family: "Permanent Marker", Helvetica;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+  font-style: normal;
+}
+
+stan {
+  animation: 5s infinite colorchange;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+@keyframes colorchange {
+  O% {
+    color: indigo;
+  }
+
+  20% {
+    color: red;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  60% {
+    color: #00ff00;
+    ;
+  }
+
+  80% {
+    color: #ff00ff;
+    ;
+  }
+
+  100% {
+    color: purple;
+  }
